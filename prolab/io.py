@@ -38,7 +38,7 @@ def read_files(path,
 
     instrument : str
         Instrument that generated the files. Supported values are ``'wpi'``,
-        ``'perkinelmer'``, and ``'shimadzu'``.
+        ``'perkinelmer'``, ``'shimadzu'``, and ``'drawell'``.
 
     format_string : str
         ``parse``-compatible template used to extract metadata from each file
@@ -99,7 +99,7 @@ def read_files(path,
     if not path.is_dir():
         raise NotADirectoryError(f'Expected a directory, got: {path}')
 
-    supported_instruments = {'wpi', 'shimadzu', 'perkinelmer'}
+    supported_instruments = {'wpi', 'shimadzu', 'perkinelmer', 'drawell'}
     if instrument not in supported_instruments:
         raise ValueError(
             'Unsupported instrument. Supported values are: '
@@ -198,11 +198,36 @@ def read_files(path,
         # Create dataframe
         curves = pd.DataFrame(curve_dict).transpose()
 
-    else:
-        raise ValueError(
-            'Unsupported instrument. Supported values are: '
-            f'{sorted(supported_instruments)}'
-        )
+    # -------------------------------------------------------------------------
+    # Specific processing of Drawell data
+    # -------------------------------------------------------------------------
+
+    elif instrument == 'drawell':
+
+        # Create dict to receive curves
+        curve_dict = {}
+
+        # Iterate over files
+        for file_path in path.iterdir():
+
+            # Skip .csv files
+            if file_path.suffix.lower() == '.csv':
+                continue
+
+            # Open file
+            raw = pd.read_table(filepath_or_buffer=file_path,
+                                decimal=decimal,
+                                sep=r'\s+',
+                                skiprows=6,
+                                index_col=1,
+                                encoding='latin1',
+                                engine='python')
+
+            # Add to list
+            curve_dict[file_path.stem] = raw['Abs'].dropna()
+
+        # Create dataframe
+        curves = pd.DataFrame(curve_dict).transpose()
 
     # -------------------------------------------------------------------------
     # Further processing of data
@@ -245,3 +270,5 @@ def read_files(path,
 
     # Return data
     return df
+
+# %%
