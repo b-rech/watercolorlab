@@ -6,11 +6,11 @@ Institution: INPE
 Created: 2026-03-12
 Python: 3.11+
 
-Dependencies: pandas, prolab.cdom, prolab.consistency, prolab.correction,
-prolab.particulate
+Dependencies: pandas, watercolorlab.cdom, watercolorlab.consistency, watercolorlab.correction,
+watercolorlab.particulate
 
-Public API: Spectra, spectra.cdom.get_absorption(),
-spectra.particulate.get_absorption(), spectra.consistency.check()
+Public API: Spectra, spectra.cdom.compute_absorption(),
+spectra.particulate.compute_absorption(), spectra.consistency.check()
 '''
 
 # %% Dependencies
@@ -26,7 +26,26 @@ from .particulate import ParticulateProcessor
 # %% Class definition
 
 class Spectra:
-    """Class to handle laboratory spectral measurements."""
+    """Class to handle laboratory spectral measurements.
+
+    Processing attributes are initialized to ``None`` and populated by the
+    corresponding processor methods. Declaring them here keeps the public
+    result API visible to static type checkers.
+    """
+
+    raw_samples: pd.DataFrame | None
+    absorbance: pd.DataFrame | None
+    absorption: pd.DataFrame | None
+    cdom_fitted: pd.DataFrame | None
+    blank_curves: pd.DataFrame | None
+    blank_salinity: pd.DataFrame | None
+    npc_offset: pd.Series | None
+    suspicious: list | None
+    absorbance_total: pd.DataFrame | None
+    absorbance_depig: pd.DataFrame | None
+    part_abs_total: pd.DataFrame | None
+    part_abs_depig: pd.DataFrame | None
+    part_abs_phyto: pd.DataFrame | None
 
     def __init__(self, data: 'pd.DataFrame'):
         """Create a Spectra container and attach its processing modules.
@@ -51,6 +70,22 @@ class Spectra:
         self.raw_spectra = self.raw_data[wavelength_values]
         self.raw_spectra.columns = wavelength_values
         self.wls = wavelength_values.to_numpy()
+
+        # Processing outputs are created lazily by the domain-specific
+        # processors, but are declared here so their public API is explicit.
+        self.raw_samples = None
+        self.absorbance = None
+        self.absorption = None
+        self.cdom_fitted = None
+        self.blank_curves = None
+        self.blank_salinity = None
+        self.npc_offset = None
+        self.suspicious = None
+        self.absorbance_total = None
+        self.absorbance_depig = None
+        self.part_abs_total = None
+        self.part_abs_depig = None
+        self.part_abs_phyto = None
 
         # Expose metadata columns as attributes used by the processors.
         meta_cols = self.raw_data.columns.difference(self.raw_spectra.columns)

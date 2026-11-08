@@ -1,10 +1,22 @@
 [project]
-name = "prolab"
-version = "0.1.0"
+name = "watercolorlab"
+version = "1.0.0"
 description = "Processing of ocean color laboratory measurements"
 authors = [{ name="Bruno Rech", email="b.rech@outlook.com" }]
 readme = "README.md"
 requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.8,<3.11",
+    "numpy>=1.26,<2.4",
+    "pandas>=2.0,<3",
+    "parse>=1.20,<2",
+    "scipy>=1.10,<1.17",
+    "seaborn>=0.13,<1",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["."]

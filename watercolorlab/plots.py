@@ -42,7 +42,9 @@ def plot_part_absorption_raw(
         Tblank_depig: pd.Series,
         Rblank_total: pd.Series,
         Rblank_depig: pd.Series,
-        station_ids: pd.Series):
+        station_ids: pd.Series,
+        trans_label='T',
+        reflect_label='R'):
     """Plot raw and offset-corrected particulate curves per station.
 
     The first panel shows the input curves; the second shows curves after
@@ -64,22 +66,22 @@ def plot_part_absorption_raw(
 
         raw_plot_curves = (
             (raw_curves[0].xs(sample_id, level='station'),
-             'blue', '-', 'T total'),
+             'blue', '-', f'{trans_label} total'),
             (raw_curves[1].xs(sample_id, level='station'),
-             'blue', '--', 'T depigmented'),
+             'blue', '--', f'{trans_label} depigmented'),
             (raw_curves[2].xs(sample_id, level='station'),
-             'red', '-', 'R total'),
+             'red', '-', f'{reflect_label} total'),
             (raw_curves[3].xs(sample_id, level='station'),
-             'red', '--', 'R depigmented'))
+             'red', '--', f'{reflect_label} depigmented'))
         corrected_plot_curves = (
             (corrected_curves[0].xs(sample_id, level='station'),
-             'blue', '-', 'T total'),
+             'blue', '-', f'{trans_label} total'),
             (corrected_curves[1].xs(sample_id, level='station'),
-             'blue', '--', 'T depigmented'),
+             'blue', '--', f'{trans_label} depigmented'),
             (corrected_curves[2].xs(sample_id, level='station'),
-             'red', '-', 'R total'),
+             'red', '-', f'{reflect_label} total'),
             (corrected_curves[3].xs(sample_id, level='station'),
-             'red', '--', 'R depigmented'))
+             'red', '--', f'{reflect_label} depigmented'))
 
         for curves, axis in ((raw_plot_curves, axes[0]),
                      (corrected_plot_curves, axes[1])):
@@ -90,19 +92,22 @@ def plot_part_absorption_raw(
 
         for axis in axes:
             Tblank_total.plot(ax=axis, color='green', lw=.7,
-                              label='T blank')
+                              label=f'{trans_label} blank')
             Tblank_depig.plot(ax=axis, color='green', lw=.7,
-                              ls='--', label='T depigmented blank')
+                              ls='--',
+                              label=f'{trans_label} depigmented blank')
             Rblank_total.plot(ax=axis, color='black', lw=.7,
-                              label='R blank')
+                              label=f'{reflect_label} blank')
             Rblank_depig.plot(ax=axis, color='black', lw=.7,
-                              ls='--', label='R depigmented blank')
+                              ls='--',
+                              label=f'{reflect_label} depigmented blank')
 
         axes[0].set(title=f'ID {sample_id} - raw')
         axes[1].set(title=f'ID {sample_id} - after offsets')
         axes[0].legend(fontsize=6, frameon=False)
         sns.despine()
         plt.show()
+        plt.close(axes[0].figure)
 
 
 def plot_part_absorption_absorbance(
@@ -130,3 +135,4 @@ def plot_part_absorption_absorbance(
         axis.grid(which='both', color='black', lw=.5)
         sns.despine()
         plt.show()
+        plt.close(axis.figure)

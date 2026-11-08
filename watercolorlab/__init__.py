@@ -1,12 +1,12 @@
 """
 Module: __init__.py
-Purpose: Expose the public prolab package API.
+Purpose: Expose the public watercolorlab package API.
 Author: Bruno Rech
 Institution: INPE
 Created: 2026-03-12
 Python: 3.11+
 
-Dependencies: prolab.spectra, prolab.io
+Dependencies: watercolorlab.spectra, watercolorlab.io
 Public API: Spectra, read_files
 """
 

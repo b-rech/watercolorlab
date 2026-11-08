@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="pdoc 16.0.0"/>
-    <title>prolab.spectra API documentation</title>
+    <title>watercolorlab.spectra API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
     <style>/*! syntax-highlighting.css */pre{line-height:125%;}span.linenos{color:inherit; background-color:transparent; padding-left:5px; padding-right:20px;}.pdoc-code .hll{background-color:#ffffcc}.pdoc-code{background:#f8f8f8;}.pdoc-code .c{color:#3D7B7B; font-style:italic}.pdoc-code .err{border:1px solid #FF0000}.pdoc-code .k{color:#008000; font-weight:bold}.pdoc-code .o{color:#666666}.pdoc-code .ch{color:#3D7B7B; font-style:italic}.pdoc-code .cm{color:#3D7B7B; font-style:italic}.pdoc-code .cp{color:#9C6500}.pdoc-code .cpf{color:#3D7B7B; font-style:italic}.pdoc-code .c1{color:#3D7B7B; font-style:italic}.pdoc-code .cs{color:#3D7B7B; font-style:italic}.pdoc-code .gd{color:#A00000}.pdoc-code .ge{font-style:italic}.pdoc-code .gr{color:#E40000}.pdoc-code .gh{color:#000080; font-weight:bold}.pdoc-code .gi{color:#008400}.pdoc-code .go{color:#717171}.pdoc-code .gp{color:#000080; font-weight:bold}.pdoc-code .gs{font-weight:bold}.pdoc-code .gu{color:#800080; font-weight:bold}.pdoc-code .gt{color:#0044DD}.pdoc-code .kc{color:#008000; font-weight:bold}.pdoc-code .kd{color:#008000; font-weight:bold}.pdoc-code .kn{color:#008000; font-weight:bold}.pdoc-code .kp{color:#008000}.pdoc-code .kr{color:#008000; font-weight:bold}.pdoc-code .kt{color:#B00040}.pdoc-code .m{color:#666666}.pdoc-code .s{color:#BA2121}.pdoc-code .na{color:#687822}.pdoc-code .nb{color:#008000}.pdoc-code .nc{color:#0000FF; font-weight:bold}.pdoc-code .no{color:#880000}.pdoc-code .nd{color:#AA22FF}.pdoc-code .ni{color:#717171; font-weight:bold}.pdoc-code .ne{color:#CB3F38; font-weight:bold}.pdoc-code .nf{color:#0000FF}.pdoc-code .nl{color:#767600}.pdoc-code .nn{color:#0000FF; font-weight:bold}.pdoc-code .nt{color:#008000; font-weight:bold}.pdoc-code .nv{color:#19177C}.pdoc-code .ow{color:#AA22FF; font-weight:bold}.pdoc-code .w{color:#bbbbbb}.pdoc-code .mb{color:#666666}.pdoc-code .mf{color:#666666}.pdoc-code .mh{color:#666666}.pdoc-code .mi{color:#666666}.pdoc-code .mo{color:#666666}.pdoc-code .sa{color:#BA2121}.pdoc-code .sb{color:#BA2121}.pdoc-code .sc{color:#BA2121}.pdoc-code .dl{color:#BA2121}.pdoc-code .sd{color:#BA2121; font-style:italic}.pdoc-code .s2{color:#BA2121}.pdoc-code .se{color:#AA5D1F; font-weight:bold}.pdoc-code .sh{color:#BA2121}.pdoc-code .si{color:#A45A77; font-weight:bold}.pdoc-code .sx{color:#008000}.pdoc-code .sr{color:#A45A77}.pdoc-code .s1{color:#BA2121}.pdoc-code .ss{color:#19177C}.pdoc-code .bp{color:#008000}.pdoc-code .fm{color:#0000FF}.pdoc-code .vc{color:#19177C}.pdoc-code .vg{color:#19177C}.pdoc-code .vi{color:#19177C}.pdoc-code .vm{color:#19177C}.pdoc-code .il{color:#666666}</style>
@@ -45,7 +45,7 @@
                                 <a class="function" href="#Spectra.consistency">consistency</a>
                         </li>
                         <li>
-                                <a class="function" href="#Spectra.get_absorption">get_absorption</a>
+                                <a class="function" href="#Spectra.compute_absorption">compute_absorption</a>
                         </li>
                         <li>
                                 <a class="function" href="#Spectra.expfit">expfit</a>
@@ -70,7 +70,7 @@
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-prolab<wbr>.spectra    </h1>
+watercolorlab<wbr>.spectra    </h1>
 
                         <div class="docstring"><p>Script: spectra.py
 Description: Spectra class and associated methods.
@@ -161,7 +161,7 @@ Python version: 3.11</p>
 </span><span id="L-66"><a href="#L-66"><span class="linenos"> 66</span></a>
 </span><span id="L-67"><a href="#L-67"><span class="linenos"> 67</span></a><span class="sd">        Examples</span>
 </span><span id="L-68"><a href="#L-68"><span class="linenos"> 68</span></a><span class="sd">        --------</span>
-</span><span id="L-69"><a href="#L-69"><span class="linenos"> 69</span></a><span class="sd">        &gt;&gt;&gt; from prolab import Spectra</span>
+</span><span id="L-69"><a href="#L-69"><span class="linenos"> 69</span></a><span class="sd">        &gt;&gt;&gt; from watercolorlab import Spectra</span>
 </span><span id="L-70"><a href="#L-70"><span class="linenos"> 70</span></a><span class="sd">        &gt;&gt;&gt; spec = Spectra(data)</span>
 </span><span id="L-71"><a href="#L-71"><span class="linenos"> 71</span></a><span class="sd">        &gt;&gt;&gt; spec.expfit()</span>
 </span><span id="L-72"><a href="#L-72"><span class="linenos"> 72</span></a><span class="sd">        &gt;&gt;&gt; spec.fitted</span>
@@ -183,7 +183,7 @@ Python version: 3.11</p>
 </span><span id="L-88"><a href="#L-88"><span class="linenos"> 88</span></a><span class="sd">        ----------</span>
 </span><span id="L-89"><a href="#L-89"><span class="linenos"> 89</span></a><span class="sd">        data : pd.DataFrame</span>
 </span><span id="L-90"><a href="#L-90"><span class="linenos"> 90</span></a><span class="sd">            A Pandas DataFrame resulting from the</span>
-</span><span id="L-91"><a href="#L-91"><span class="linenos"> 91</span></a><span class="sd">            `prolab.io.read_files` function.</span>
+</span><span id="L-91"><a href="#L-91"><span class="linenos"> 91</span></a><span class="sd">            `watercolorlab.io.read_files` function.</span>
 </span><span id="L-92"><a href="#L-92"><span class="linenos"> 92</span></a><span class="sd">        &#39;&#39;&#39;</span>
 </span><span id="L-93"><a href="#L-93"><span class="linenos"> 93</span></a>
 </span><span id="L-94"><a href="#L-94"><span class="linenos"> 94</span></a>        <span class="c1"># ---------------</span>
@@ -280,7 +280,7 @@ Python version: 3.11</p>
 </span><span id="L-185"><a href="#L-185"><span class="linenos">185</span></a>
 </span><span id="L-186"><a href="#L-186"><span class="linenos">186</span></a><span class="sd">        Returns</span>
 </span><span id="L-187"><a href="#L-187"><span class="linenos">187</span></a><span class="sd">        -------</span>
-</span><span id="L-188"><a href="#L-188"><span class="linenos">188</span></a><span class="sd">        prolab.Spectra</span>
+</span><span id="L-188"><a href="#L-188"><span class="linenos">188</span></a><span class="sd">        watercolorlab.Spectra</span>
 </span><span id="L-189"><a href="#L-189"><span class="linenos">189</span></a><span class="sd">        &#39;&#39;&#39;</span>
 </span><span id="L-190"><a href="#L-190"><span class="linenos">190</span></a>
 </span><span id="L-191"><a href="#L-191"><span class="linenos">191</span></a>        <span class="c1"># Analyze only samples...</span>
@@ -407,7 +407,7 @@ Python version: 3.11</p>
 </span><span id="L-312"><a href="#L-312"><span class="linenos">312</span></a>    <span class="c1"># -------------------------------------------------------------------------</span>
 </span><span id="L-313"><a href="#L-313"><span class="linenos">313</span></a>    <span class="c1"># Method: retrieve absorption</span>
 </span><span id="L-314"><a href="#L-314"><span class="linenos">314</span></a>    <span class="c1"># -------------------------------------------------------------------------</span>
-</span><span id="L-315"><a href="#L-315"><span class="linenos">315</span></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_absorption</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+</span><span id="L-315"><a href="#L-315"><span class="linenos">315</span></a>    <span class="k">def</span><span class="w"> </span><span class="nf">compute_absorption</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
 </span><span id="L-316"><a href="#L-316"><span class="linenos">316</span></a>                       <span class="n">use_blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 </span><span id="L-317"><a href="#L-317"><span class="linenos">317</span></a>                       <span class="n">blank</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
 </span><span id="L-318"><a href="#L-318"><span class="linenos">318</span></a>                       <span class="n">wl_null_point_correction</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
@@ -447,7 +447,7 @@ Python version: 3.11</p>
 </span><span id="L-352"><a href="#L-352"><span class="linenos">352</span></a>
 </span><span id="L-353"><a href="#L-353"><span class="linenos">353</span></a><span class="sd">        Returns</span>
 </span><span id="L-354"><a href="#L-354"><span class="linenos">354</span></a><span class="sd">        -------</span>
-</span><span id="L-355"><a href="#L-355"><span class="linenos">355</span></a><span class="sd">        prolab.Spectra</span>
+</span><span id="L-355"><a href="#L-355"><span class="linenos">355</span></a><span class="sd">        watercolorlab.Spectra</span>
 </span><span id="L-356"><a href="#L-356"><span class="linenos">356</span></a><span class="sd">            The same object is returned.</span>
 </span><span id="L-357"><a href="#L-357"><span class="linenos">357</span></a><span class="sd">            A new attribute `absorption` is added inplace.</span>
 </span><span id="L-358"><a href="#L-358"><span class="linenos">358</span></a><span class="sd">        &#39;&#39;&#39;</span>
@@ -606,7 +606,7 @@ Python version: 3.11</p>
 </span><span id="L-511"><a href="#L-511"><span class="linenos">511</span></a>
 </span><span id="L-512"><a href="#L-512"><span class="linenos">512</span></a><span class="sd">        Returns</span>
 </span><span id="L-513"><a href="#L-513"><span class="linenos">513</span></a><span class="sd">        -------</span>
-</span><span id="L-514"><a href="#L-514"><span class="linenos">514</span></a><span class="sd">        prolab.Spectra</span>
+</span><span id="L-514"><a href="#L-514"><span class="linenos">514</span></a><span class="sd">        watercolorlab.Spectra</span>
 </span><span id="L-515"><a href="#L-515"><span class="linenos">515</span></a><span class="sd">            The same object is returned.</span>
 </span><span id="L-516"><a href="#L-516"><span class="linenos">516</span></a><span class="sd">            A new attribute `fitted` is added inplace.</span>
 </span><span id="L-517"><a href="#L-517"><span class="linenos">517</span></a><span class="sd">        &#39;&#39;&#39;</span>
@@ -946,7 +946,7 @@ Python version: 3.11</p>
 </span><span id="Spectra-67"><a href="#Spectra-67"><span class="linenos"> 67</span></a>
 </span><span id="Spectra-68"><a href="#Spectra-68"><span class="linenos"> 68</span></a><span class="sd">        Examples</span>
 </span><span id="Spectra-69"><a href="#Spectra-69"><span class="linenos"> 69</span></a><span class="sd">        --------</span>
-</span><span id="Spectra-70"><a href="#Spectra-70"><span class="linenos"> 70</span></a><span class="sd">        &gt;&gt;&gt; from prolab import Spectra</span>
+</span><span id="Spectra-70"><a href="#Spectra-70"><span class="linenos"> 70</span></a><span class="sd">        &gt;&gt;&gt; from watercolorlab import Spectra</span>
 </span><span id="Spectra-71"><a href="#Spectra-71"><span class="linenos"> 71</span></a><span class="sd">        &gt;&gt;&gt; spec = Spectra(data)</span>
 </span><span id="Spectra-72"><a href="#Spectra-72"><span class="linenos"> 72</span></a><span class="sd">        &gt;&gt;&gt; spec.expfit()</span>
 </span><span id="Spectra-73"><a href="#Spectra-73"><span class="linenos"> 73</span></a><span class="sd">        &gt;&gt;&gt; spec.fitted</span>
@@ -968,7 +968,7 @@ Python version: 3.11</p>
 </span><span id="Spectra-89"><a href="#Spectra-89"><span class="linenos"> 89</span></a><span class="sd">        ----------</span>
 </span><span id="Spectra-90"><a href="#Spectra-90"><span class="linenos"> 90</span></a><span class="sd">        data : pd.DataFrame</span>
 </span><span id="Spectra-91"><a href="#Spectra-91"><span class="linenos"> 91</span></a><span class="sd">            A Pandas DataFrame resulting from the</span>
-</span><span id="Spectra-92"><a href="#Spectra-92"><span class="linenos"> 92</span></a><span class="sd">            `prolab.io.read_files` function.</span>
+</span><span id="Spectra-92"><a href="#Spectra-92"><span class="linenos"> 92</span></a><span class="sd">            `watercolorlab.io.read_files` function.</span>
 </span><span id="Spectra-93"><a href="#Spectra-93"><span class="linenos"> 93</span></a><span class="sd">        &#39;&#39;&#39;</span>
 </span><span id="Spectra-94"><a href="#Spectra-94"><span class="linenos"> 94</span></a>
 </span><span id="Spectra-95"><a href="#Spectra-95"><span class="linenos"> 95</span></a>        <span class="c1"># ---------------</span>
@@ -1065,7 +1065,7 @@ Python version: 3.11</p>
 </span><span id="Spectra-186"><a href="#Spectra-186"><span class="linenos">186</span></a>
 </span><span id="Spectra-187"><a href="#Spectra-187"><span class="linenos">187</span></a><span class="sd">        Returns</span>
 </span><span id="Spectra-188"><a href="#Spectra-188"><span class="linenos">188</span></a><span class="sd">        -------</span>
-</span><span id="Spectra-189"><a href="#Spectra-189"><span class="linenos">189</span></a><span class="sd">        prolab.Spectra</span>
+</span><span id="Spectra-189"><a href="#Spectra-189"><span class="linenos">189</span></a><span class="sd">        watercolorlab.Spectra</span>
 </span><span id="Spectra-190"><a href="#Spectra-190"><span class="linenos">190</span></a><span class="sd">        &#39;&#39;&#39;</span>
 </span><span id="Spectra-191"><a href="#Spectra-191"><span class="linenos">191</span></a>
 </span><span id="Spectra-192"><a href="#Spectra-192"><span class="linenos">192</span></a>        <span class="c1"># Analyze only samples...</span>
@@ -1192,7 +1192,7 @@ Python version: 3.11</p>
 </span><span id="Spectra-313"><a href="#Spectra-313"><span class="linenos">313</span></a>    <span class="c1"># -------------------------------------------------------------------------</span>
 </span><span id="Spectra-314"><a href="#Spectra-314"><span class="linenos">314</span></a>    <span class="c1"># Method: retrieve absorption</span>
 </span><span id="Spectra-315"><a href="#Spectra-315"><span class="linenos">315</span></a>    <span class="c1"># -------------------------------------------------------------------------</span>
-</span><span id="Spectra-316"><a href="#Spectra-316"><span class="linenos">316</span></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_absorption</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+</span><span id="Spectra-316"><a href="#Spectra-316"><span class="linenos">316</span></a>    <span class="k">def</span><span class="w"> </span><span class="nf">compute_absorption</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
 </span><span id="Spectra-317"><a href="#Spectra-317"><span class="linenos">317</span></a>                       <span class="n">use_blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 </span><span id="Spectra-318"><a href="#Spectra-318"><span class="linenos">318</span></a>                       <span class="n">blank</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
 </span><span id="Spectra-319"><a href="#Spectra-319"><span class="linenos">319</span></a>                       <span class="n">wl_null_point_correction</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
@@ -1232,7 +1232,7 @@ Python version: 3.11</p>
 </span><span id="Spectra-353"><a href="#Spectra-353"><span class="linenos">353</span></a>
 </span><span id="Spectra-354"><a href="#Spectra-354"><span class="linenos">354</span></a><span class="sd">        Returns</span>
 </span><span id="Spectra-355"><a href="#Spectra-355"><span class="linenos">355</span></a><span class="sd">        -------</span>
-</span><span id="Spectra-356"><a href="#Spectra-356"><span class="linenos">356</span></a><span class="sd">        prolab.Spectra</span>
+</span><span id="Spectra-356"><a href="#Spectra-356"><span class="linenos">356</span></a><span class="sd">        watercolorlab.Spectra</span>
 </span><span id="Spectra-357"><a href="#Spectra-357"><span class="linenos">357</span></a><span class="sd">            The same object is returned.</span>
 </span><span id="Spectra-358"><a href="#Spectra-358"><span class="linenos">358</span></a><span class="sd">            A new attribute `absorption` is added inplace.</span>
 </span><span id="Spectra-359"><a href="#Spectra-359"><span class="linenos">359</span></a><span class="sd">        &#39;&#39;&#39;</span>
@@ -1391,7 +1391,7 @@ Python version: 3.11</p>
 </span><span id="Spectra-512"><a href="#Spectra-512"><span class="linenos">512</span></a>
 </span><span id="Spectra-513"><a href="#Spectra-513"><span class="linenos">513</span></a><span class="sd">        Returns</span>
 </span><span id="Spectra-514"><a href="#Spectra-514"><span class="linenos">514</span></a><span class="sd">        -------</span>
-</span><span id="Spectra-515"><a href="#Spectra-515"><span class="linenos">515</span></a><span class="sd">        prolab.Spectra</span>
+</span><span id="Spectra-515"><a href="#Spectra-515"><span class="linenos">515</span></a><span class="sd">        watercolorlab.Spectra</span>
 </span><span id="Spectra-516"><a href="#Spectra-516"><span class="linenos">516</span></a><span class="sd">            The same object is returned.</span>
 </span><span id="Spectra-517"><a href="#Spectra-517"><span class="linenos">517</span></a><span class="sd">            A new attribute `fitted` is added inplace.</span>
 </span><span id="Spectra-518"><a href="#Spectra-518"><span class="linenos">518</span></a><span class="sd">        &#39;&#39;&#39;</span>
@@ -1718,7 +1718,7 @@ fit_df : pandas.DataFrame
 <h2 id="examples">Examples</h2>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">prolab</span><span class="w"> </span><span class="kn">import</span> <span class="n">Spectra</span>
+<pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">watercolorlab</span><span class="w"> </span><span class="kn">import</span> <span class="n">Spectra</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span> <span class="o">=</span> <span class="n">Spectra</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span><span class="o">.</span><span class="n">expfit</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span><span class="o">.</span><span class="n">fitted</span>
@@ -1750,7 +1750,7 @@ column names.</p>
 </span><span id="Spectra.__init__-89"><a href="#Spectra.__init__-89"><span class="linenos"> 89</span></a><span class="sd">        ----------</span>
 </span><span id="Spectra.__init__-90"><a href="#Spectra.__init__-90"><span class="linenos"> 90</span></a><span class="sd">        data : pd.DataFrame</span>
 </span><span id="Spectra.__init__-91"><a href="#Spectra.__init__-91"><span class="linenos"> 91</span></a><span class="sd">            A Pandas DataFrame resulting from the</span>
-</span><span id="Spectra.__init__-92"><a href="#Spectra.__init__-92"><span class="linenos"> 92</span></a><span class="sd">            `prolab.io.read_files` function.</span>
+</span><span id="Spectra.__init__-92"><a href="#Spectra.__init__-92"><span class="linenos"> 92</span></a><span class="sd">            `watercolorlab.io.read_files` function.</span>
 </span><span id="Spectra.__init__-93"><a href="#Spectra.__init__-93"><span class="linenos"> 93</span></a><span class="sd">        &#39;&#39;&#39;</span>
 </span><span id="Spectra.__init__-94"><a href="#Spectra.__init__-94"><span class="linenos"> 94</span></a>
 </span><span id="Spectra.__init__-95"><a href="#Spectra.__init__-95"><span class="linenos"> 95</span></a>        <span class="c1"># ---------------</span>
@@ -1787,7 +1787,7 @@ column names.</p>
 
 <p>data : pd.DataFrame
     A Pandas DataFrame resulting from the
-    <code>prolab.io.read_files</code> function.</p>
+    <code>watercolorlab.io.read_files</code> function.</p>
 </div>
 
 
@@ -1900,7 +1900,7 @@ column names.</p>
 </span><span id="Spectra.consistency-186"><a href="#Spectra.consistency-186"><span class="linenos">186</span></a>
 </span><span id="Spectra.consistency-187"><a href="#Spectra.consistency-187"><span class="linenos">187</span></a><span class="sd">        Returns</span>
 </span><span id="Spectra.consistency-188"><a href="#Spectra.consistency-188"><span class="linenos">188</span></a><span class="sd">        -------</span>
-</span><span id="Spectra.consistency-189"><a href="#Spectra.consistency-189"><span class="linenos">189</span></a><span class="sd">        prolab.Spectra</span>
+</span><span id="Spectra.consistency-189"><a href="#Spectra.consistency-189"><span class="linenos">189</span></a><span class="sd">        watercolorlab.Spectra</span>
 </span><span id="Spectra.consistency-190"><a href="#Spectra.consistency-190"><span class="linenos">190</span></a><span class="sd">        &#39;&#39;&#39;</span>
 </span><span id="Spectra.consistency-191"><a href="#Spectra.consistency-191"><span class="linenos">191</span></a>
 </span><span id="Spectra.consistency-192"><a href="#Spectra.consistency-192"><span class="linenos">192</span></a>        <span class="c1"># Analyze only samples...</span>
@@ -2068,200 +2068,200 @@ dropped until only a single curve is left.</p>
 
 <h2 id="returns">Returns</h2>
 
-<p>prolab.Spectra</p>
+<p>watercolorlab.Spectra</p>
 </div>
 
 
                             </div>
-                            <div id="Spectra.get_absorption" class="classattr">
-                                        <input id="Spectra.get_absorption-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Spectra.compute_absorption" class="classattr">
+                                        <input id="Spectra.compute_absorption-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">get_absorption</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">use_blank</span><span class="o">=</span><span class="kc">True</span>,</span><span class="param">	<span class="n">blank</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">wl_null_point_correction</span><span class="o">=</span><span class="mi">600</span>,</span><span class="param">	<span class="n">pathlength</span><span class="o">=</span><span class="mf">0.1</span></span><span class="return-annotation">):</span></span>
+        <span class="name">compute_absorption</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">use_blank</span><span class="o">=</span><span class="kc">True</span>,</span><span class="param">	<span class="n">blank</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">wl_null_point_correction</span><span class="o">=</span><span class="mi">600</span>,</span><span class="param">	<span class="n">pathlength</span><span class="o">=</span><span class="mf">0.1</span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Spectra.get_absorption-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Spectra.compute_absorption-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Spectra.get_absorption"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Spectra.get_absorption-316"><a href="#Spectra.get_absorption-316"><span class="linenos">316</span></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_absorption</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
-</span><span id="Spectra.get_absorption-317"><a href="#Spectra.get_absorption-317"><span class="linenos">317</span></a>                       <span class="n">use_blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-</span><span id="Spectra.get_absorption-318"><a href="#Spectra.get_absorption-318"><span class="linenos">318</span></a>                       <span class="n">blank</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-</span><span id="Spectra.get_absorption-319"><a href="#Spectra.get_absorption-319"><span class="linenos">319</span></a>                       <span class="n">wl_null_point_correction</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
-</span><span id="Spectra.get_absorption-320"><a href="#Spectra.get_absorption-320"><span class="linenos">320</span></a>                       <span class="n">pathlength</span><span class="o">=</span><span class="mf">.1</span><span class="p">):</span>
-</span><span id="Spectra.get_absorption-321"><a href="#Spectra.get_absorption-321"><span class="linenos">321</span></a><span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
-</span><span id="Spectra.get_absorption-322"><a href="#Spectra.get_absorption-322"><span class="linenos">322</span></a><span class="sd">        Retrieves absorption from absorbance curves.</span>
-</span><span id="Spectra.get_absorption-323"><a href="#Spectra.get_absorption-323"><span class="linenos">323</span></a>
-</span><span id="Spectra.get_absorption-324"><a href="#Spectra.get_absorption-324"><span class="linenos">324</span></a><span class="sd">        Parameters</span>
-</span><span id="Spectra.get_absorption-325"><a href="#Spectra.get_absorption-325"><span class="linenos">325</span></a><span class="sd">        ----------</span>
-</span><span id="Spectra.get_absorption-326"><a href="#Spectra.get_absorption-326"><span class="linenos">326</span></a>
-</span><span id="Spectra.get_absorption-327"><a href="#Spectra.get_absorption-327"><span class="linenos">327</span></a><span class="sd">        use_blank : bool, optional</span>
-</span><span id="Spectra.get_absorption-328"><a href="#Spectra.get_absorption-328"><span class="linenos">328</span></a><span class="sd">            Indicates whether the data must be corrected using a blank.</span>
-</span><span id="Spectra.get_absorption-329"><a href="#Spectra.get_absorption-329"><span class="linenos">329</span></a><span class="sd">            The default is `True`.</span>
-</span><span id="Spectra.get_absorption-330"><a href="#Spectra.get_absorption-330"><span class="linenos">330</span></a>
-</span><span id="Spectra.get_absorption-331"><a href="#Spectra.get_absorption-331"><span class="linenos">331</span></a><span class="sd">        blank : pd.DataFrame, optional</span>
-</span><span id="Spectra.get_absorption-332"><a href="#Spectra.get_absorption-332"><span class="linenos">332</span></a><span class="sd">            Only used when `use_blank=True`.</span>
-</span><span id="Spectra.get_absorption-333"><a href="#Spectra.get_absorption-333"><span class="linenos">333</span></a><span class="sd">            If `None`, the mean blank measurements</span>
-</span><span id="Spectra.get_absorption-334"><a href="#Spectra.get_absorption-334"><span class="linenos">334</span></a><span class="sd">            within the data will be used.</span>
-</span><span id="Spectra.get_absorption-335"><a href="#Spectra.get_absorption-335"><span class="linenos">335</span></a><span class="sd">            If a single curve is provided (wavelengths in the columns),</span>
-</span><span id="Spectra.get_absorption-336"><a href="#Spectra.get_absorption-336"><span class="linenos">336</span></a><span class="sd">            it will be used in all measurements.</span>
-</span><span id="Spectra.get_absorption-337"><a href="#Spectra.get_absorption-337"><span class="linenos">337</span></a><span class="sd">            If multiple curves are provided (salinity curves), the algorithm</span>
-</span><span id="Spectra.get_absorption-338"><a href="#Spectra.get_absorption-338"><span class="linenos">338</span></a><span class="sd">            will select the blank closer to the sample at 685 nm, </span>
-</span><span id="Spectra.get_absorption-339"><a href="#Spectra.get_absorption-339"><span class="linenos">339</span></a><span class="sd">            following the IOCCG protocol.</span>
-</span><span id="Spectra.get_absorption-340"><a href="#Spectra.get_absorption-340"><span class="linenos">340</span></a><span class="sd">            The default is `None`.</span>
-</span><span id="Spectra.get_absorption-341"><a href="#Spectra.get_absorption-341"><span class="linenos">341</span></a>
-</span><span id="Spectra.get_absorption-342"><a href="#Spectra.get_absorption-342"><span class="linenos">342</span></a><span class="sd">        wl_null_point_correction : int or array-like, optional</span>
-</span><span id="Spectra.get_absorption-343"><a href="#Spectra.get_absorption-343"><span class="linenos">343</span></a><span class="sd">            Wavelength to be used at the null point correction (offset).</span>
-</span><span id="Spectra.get_absorption-344"><a href="#Spectra.get_absorption-344"><span class="linenos">344</span></a><span class="sd">            If an integer is passed, the absorption at this wavelength will</span>
-</span><span id="Spectra.get_absorption-345"><a href="#Spectra.get_absorption-345"><span class="linenos">345</span></a><span class="sd">            be used.</span>
-</span><span id="Spectra.get_absorption-346"><a href="#Spectra.get_absorption-346"><span class="linenos">346</span></a><span class="sd">            If a tuple with the limits of a spectral interval is</span>
-</span><span id="Spectra.get_absorption-347"><a href="#Spectra.get_absorption-347"><span class="linenos">347</span></a><span class="sd">            provided, the mean absorption within the range will be used.</span>
-</span><span id="Spectra.get_absorption-348"><a href="#Spectra.get_absorption-348"><span class="linenos">348</span></a><span class="sd">            If `None`, the null point correction won&#39;t be executed.</span>
-</span><span id="Spectra.get_absorption-349"><a href="#Spectra.get_absorption-349"><span class="linenos">349</span></a><span class="sd">            The default is `None`.</span>
-</span><span id="Spectra.get_absorption-350"><a href="#Spectra.get_absorption-350"><span class="linenos">350</span></a>
-</span><span id="Spectra.get_absorption-351"><a href="#Spectra.get_absorption-351"><span class="linenos">351</span></a><span class="sd">        pathlength : float, optional</span>
-</span><span id="Spectra.get_absorption-352"><a href="#Spectra.get_absorption-352"><span class="linenos">352</span></a><span class="sd">            The instrument optical path length in meters. The default is `.1`.</span>
-</span><span id="Spectra.get_absorption-353"><a href="#Spectra.get_absorption-353"><span class="linenos">353</span></a>
-</span><span id="Spectra.get_absorption-354"><a href="#Spectra.get_absorption-354"><span class="linenos">354</span></a><span class="sd">        Returns</span>
-</span><span id="Spectra.get_absorption-355"><a href="#Spectra.get_absorption-355"><span class="linenos">355</span></a><span class="sd">        -------</span>
-</span><span id="Spectra.get_absorption-356"><a href="#Spectra.get_absorption-356"><span class="linenos">356</span></a><span class="sd">        prolab.Spectra</span>
-</span><span id="Spectra.get_absorption-357"><a href="#Spectra.get_absorption-357"><span class="linenos">357</span></a><span class="sd">            The same object is returned.</span>
-</span><span id="Spectra.get_absorption-358"><a href="#Spectra.get_absorption-358"><span class="linenos">358</span></a><span class="sd">            A new attribute `absorption` is added inplace.</span>
-</span><span id="Spectra.get_absorption-359"><a href="#Spectra.get_absorption-359"><span class="linenos">359</span></a><span class="sd">        &#39;&#39;&#39;</span>
-</span><span id="Spectra.get_absorption-360"><a href="#Spectra.get_absorption-360"><span class="linenos">360</span></a>
-</span><span id="Spectra.get_absorption-361"><a href="#Spectra.get_absorption-361"><span class="linenos">361</span></a>        <span class="c1">#------------------------</span>
-</span><span id="Spectra.get_absorption-362"><a href="#Spectra.get_absorption-362"><span class="linenos">362</span></a>        <span class="c1"># Prepare data and blank</span>
-</span><span id="Spectra.get_absorption-363"><a href="#Spectra.get_absorption-363"><span class="linenos">363</span></a>        <span class="c1">#------------------------</span>
-</span><span id="Spectra.get_absorption-364"><a href="#Spectra.get_absorption-364"><span class="linenos">364</span></a>
-</span><span id="Spectra.get_absorption-365"><a href="#Spectra.get_absorption-365"><span class="linenos">365</span></a>        <span class="c1"># If the blank curves from the dataset are to be used</span>
-</span><span id="Spectra.get_absorption-366"><a href="#Spectra.get_absorption-366"><span class="linenos">366</span></a>        <span class="k">if</span> <span class="n">use_blank</span> <span class="ow">and</span> <span class="n">blank</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Spectra.get_absorption-367"><a href="#Spectra.get_absorption-367"><span class="linenos">367</span></a>
-</span><span id="Spectra.get_absorption-368"><a href="#Spectra.get_absorption-368"><span class="linenos">368</span></a>            <span class="c1"># Get mean reference curves</span>
-</span><span id="Spectra.get_absorption-369"><a href="#Spectra.get_absorption-369"><span class="linenos">369</span></a>            <span class="n">blank</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span>
-</span><span id="Spectra.get_absorption-370"><a href="#Spectra.get_absorption-370"><span class="linenos">370</span></a>                     <span class="o">.</span><span class="n">absorbance</span>
-</span><span id="Spectra.get_absorption-371"><a href="#Spectra.get_absorption-371"><span class="linenos">371</span></a>                     <span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">is_blank</span><span class="p">]</span>
-</span><span id="Spectra.get_absorption-372"><a href="#Spectra.get_absorption-372"><span class="linenos">372</span></a>                     <span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-</span><span id="Spectra.get_absorption-373"><a href="#Spectra.get_absorption-373"><span class="linenos">373</span></a>                     <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;blank&#39;</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-374"><a href="#Spectra.get_absorption-374"><span class="linenos">374</span></a>                     <span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
-</span><span id="Spectra.get_absorption-375"><a href="#Spectra.get_absorption-375"><span class="linenos">375</span></a>                     <span class="o">.</span><span class="n">transpose</span><span class="p">())</span>
-</span><span id="Spectra.get_absorption-376"><a href="#Spectra.get_absorption-376"><span class="linenos">376</span></a>
-</span><span id="Spectra.get_absorption-377"><a href="#Spectra.get_absorption-377"><span class="linenos">377</span></a>        <span class="c1"># If a blank curve (or curves) is provided</span>
-</span><span id="Spectra.get_absorption-378"><a href="#Spectra.get_absorption-378"><span class="linenos">378</span></a>        <span class="k">elif</span> <span class="n">use_blank</span> <span class="ow">and</span> <span class="n">blank</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Spectra.get_absorption-379"><a href="#Spectra.get_absorption-379"><span class="linenos">379</span></a>
-</span><span id="Spectra.get_absorption-380"><a href="#Spectra.get_absorption-380"><span class="linenos">380</span></a>            <span class="c1"># Prepare the curve(s)</span>
-</span><span id="Spectra.get_absorption-381"><a href="#Spectra.get_absorption-381"><span class="linenos">381</span></a>            <span class="n">blank</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">blank</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-382"><a href="#Spectra.get_absorption-382"><span class="linenos">382</span></a>
-</span><span id="Spectra.get_absorption-383"><a href="#Spectra.get_absorption-383"><span class="linenos">383</span></a>        <span class="c1"># In case no blank is to be used (i.e., curves already corrected)</span>
-</span><span id="Spectra.get_absorption-384"><a href="#Spectra.get_absorption-384"><span class="linenos">384</span></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="Spectra.get_absorption-385"><a href="#Spectra.get_absorption-385"><span class="linenos">385</span></a>            <span class="n">blank</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="n">wl</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">wl</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">wls</span><span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;blank&#39;</span><span class="p">])</span>
-</span><span id="Spectra.get_absorption-386"><a href="#Spectra.get_absorption-386"><span class="linenos">386</span></a>
-</span><span id="Spectra.get_absorption-387"><a href="#Spectra.get_absorption-387"><span class="linenos">387</span></a>        <span class="c1"># Min and max wavelengths available</span>
-</span><span id="Spectra.get_absorption-388"><a href="#Spectra.get_absorption-388"><span class="linenos">388</span></a>        <span class="n">wlmin</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wls</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">blank</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
-</span><span id="Spectra.get_absorption-389"><a href="#Spectra.get_absorption-389"><span class="linenos">389</span></a>        <span class="n">wlmax</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wls</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">blank</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
-</span><span id="Spectra.get_absorption-390"><a href="#Spectra.get_absorption-390"><span class="linenos">390</span></a>        <span class="n">wl_range</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">wlmin</span><span class="p">,</span> <span class="n">wlmax</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-391"><a href="#Spectra.get_absorption-391"><span class="linenos">391</span></a>
-</span><span id="Spectra.get_absorption-392"><a href="#Spectra.get_absorption-392"><span class="linenos">392</span></a>        <span class="c1"># Get mean sample curves</span>
-</span><span id="Spectra.get_absorption-393"><a href="#Spectra.get_absorption-393"><span class="linenos">393</span></a>        <span class="c1"># They&#39;re grouped by id in case of multiple measurements</span>
-</span><span id="Spectra.get_absorption-394"><a href="#Spectra.get_absorption-394"><span class="linenos">394</span></a>        <span class="n">mean</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span>
-</span><span id="Spectra.get_absorption-395"><a href="#Spectra.get_absorption-395"><span class="linenos">395</span></a>                <span class="o">.</span><span class="n">rdata</span>
-</span><span id="Spectra.get_absorption-396"><a href="#Spectra.get_absorption-396"><span class="linenos">396</span></a>                <span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">is_sample</span><span class="p">]</span>
-</span><span id="Spectra.get_absorption-397"><a href="#Spectra.get_absorption-397"><span class="linenos">397</span></a>                <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-398"><a href="#Spectra.get_absorption-398"><span class="linenos">398</span></a>                <span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-399"><a href="#Spectra.get_absorption-399"><span class="linenos">399</span></a>                <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">regex</span><span class="o">=</span><span class="s1">&#39;\d&#39;</span><span class="p">))</span>
-</span><span id="Spectra.get_absorption-400"><a href="#Spectra.get_absorption-400"><span class="linenos">400</span></a>        <span class="n">mean</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">mean</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-401"><a href="#Spectra.get_absorption-401"><span class="linenos">401</span></a>
-</span><span id="Spectra.get_absorption-402"><a href="#Spectra.get_absorption-402"><span class="linenos">402</span></a>        <span class="c1"># Filter wavelengths</span>
-</span><span id="Spectra.get_absorption-403"><a href="#Spectra.get_absorption-403"><span class="linenos">403</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">raw_absorbance</span> <span class="o">=</span> <span class="n">mean</span><span class="p">[</span><span class="n">wl_range</span><span class="p">]</span>
-</span><span id="Spectra.get_absorption-404"><a href="#Spectra.get_absorption-404"><span class="linenos">404</span></a>        <span class="n">blank</span> <span class="o">=</span> <span class="n">blank</span><span class="p">[</span><span class="n">wl_range</span><span class="p">]</span>
-</span><span id="Spectra.get_absorption-405"><a href="#Spectra.get_absorption-405"><span class="linenos">405</span></a>
-</span><span id="Spectra.get_absorption-406"><a href="#Spectra.get_absorption-406"><span class="linenos">406</span></a>        <span class="c1">#-----------------------</span>
-</span><span id="Spectra.get_absorption-407"><a href="#Spectra.get_absorption-407"><span class="linenos">407</span></a>        <span class="c1"># Correction with blank</span>
-</span><span id="Spectra.get_absorption-408"><a href="#Spectra.get_absorption-408"><span class="linenos">408</span></a>        <span class="c1">#-----------------------</span>
-</span><span id="Spectra.get_absorption-409"><a href="#Spectra.get_absorption-409"><span class="linenos">409</span></a>
-</span><span id="Spectra.get_absorption-410"><a href="#Spectra.get_absorption-410"><span class="linenos">410</span></a>        <span class="c1"># For single blank curves</span>
-</span><span id="Spectra.get_absorption-411"><a href="#Spectra.get_absorption-411"><span class="linenos">411</span></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">blank</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-</span><span id="Spectra.get_absorption-412"><a href="#Spectra.get_absorption-412"><span class="linenos">412</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">raw_absorbance</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">blank</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-413"><a href="#Spectra.get_absorption-413"><span class="linenos">413</span></a>
-</span><span id="Spectra.get_absorption-414"><a href="#Spectra.get_absorption-414"><span class="linenos">414</span></a>        <span class="c1"># For multiple blank curves</span>
-</span><span id="Spectra.get_absorption-415"><a href="#Spectra.get_absorption-415"><span class="linenos">415</span></a>        <span class="c1"># It was designed to account for salinity curves, and the selection</span>
-</span><span id="Spectra.get_absorption-416"><a href="#Spectra.get_absorption-416"><span class="linenos">416</span></a>        <span class="c1"># is performed by minimizing the difference at 685 nm</span>
-</span><span id="Spectra.get_absorption-417"><a href="#Spectra.get_absorption-417"><span class="linenos">417</span></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="Spectra.get_absorption-418"><a href="#Spectra.get_absorption-418"><span class="linenos">418</span></a>
-</span><span id="Spectra.get_absorption-419"><a href="#Spectra.get_absorption-419"><span class="linenos">419</span></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The correction will use the salinity curves provided&#39;</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-420"><a href="#Spectra.get_absorption-420"><span class="linenos">420</span></a>
-</span><span id="Spectra.get_absorption-421"><a href="#Spectra.get_absorption-421"><span class="linenos">421</span></a>            <span class="c1"># Dictionary to receive corrected curves</span>
-</span><span id="Spectra.get_absorption-422"><a href="#Spectra.get_absorption-422"><span class="linenos">422</span></a>            <span class="n">corr_dict</span> <span class="o">=</span> <span class="p">{}</span>
-</span><span id="Spectra.get_absorption-423"><a href="#Spectra.get_absorption-423"><span class="linenos">423</span></a>
-</span><span id="Spectra.get_absorption-424"><a href="#Spectra.get_absorption-424"><span class="linenos">424</span></a>            <span class="c1"># Dictionaries to save reference curves and their names</span>
-</span><span id="Spectra.get_absorption-425"><a href="#Spectra.get_absorption-425"><span class="linenos">425</span></a>            <span class="n">blank_dict</span> <span class="o">=</span> <span class="p">{}</span>
-</span><span id="Spectra.get_absorption-426"><a href="#Spectra.get_absorption-426"><span class="linenos">426</span></a>            <span class="n">blank_sal_dict</span> <span class="o">=</span> <span class="p">{}</span>
-</span><span id="Spectra.get_absorption-427"><a href="#Spectra.get_absorption-427"><span class="linenos">427</span></a>
-</span><span id="Spectra.get_absorption-428"><a href="#Spectra.get_absorption-428"><span class="linenos">428</span></a>            <span class="c1"># Iterate over curves</span>
-</span><span id="Spectra.get_absorption-429"><a href="#Spectra.get_absorption-429"><span class="linenos">429</span></a>            <span class="k">for</span> <span class="n">st</span><span class="p">,</span> <span class="n">curve</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">raw_absorbance</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-</span><span id="Spectra.get_absorption-430"><a href="#Spectra.get_absorption-430"><span class="linenos">430</span></a>
-</span><span id="Spectra.get_absorption-431"><a href="#Spectra.get_absorption-431"><span class="linenos">431</span></a>                <span class="c1"># Select a reference curve</span>
-</span><span id="Spectra.get_absorption-432"><a href="#Spectra.get_absorption-432"><span class="linenos">432</span></a>                <span class="n">blank_sel</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="Spectra.get_absorption-433"><a href="#Spectra.get_absorption-433"><span class="linenos">433</span></a>                    <span class="nb">abs</span><span class="p">(</span><span class="n">blank</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="mi">685</span><span class="p">:]</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">curve</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">685</span><span class="p">:],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-</span><span id="Spectra.get_absorption-434"><a href="#Spectra.get_absorption-434"><span class="linenos">434</span></a>                    <span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-435"><a href="#Spectra.get_absorption-435"><span class="linenos">435</span></a>                    <span class="o">.</span><span class="n">sort_values</span><span class="p">()</span>
-</span><span id="Spectra.get_absorption-436"><a href="#Spectra.get_absorption-436"><span class="linenos">436</span></a>                    <span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</span><span id="Spectra.get_absorption-437"><a href="#Spectra.get_absorption-437"><span class="linenos">437</span></a>                    <span class="p">)</span>
-</span><span id="Spectra.get_absorption-438"><a href="#Spectra.get_absorption-438"><span class="linenos">438</span></a>
-</span><span id="Spectra.get_absorption-439"><a href="#Spectra.get_absorption-439"><span class="linenos">439</span></a>                <span class="c1"># Subtract selected reference</span>
-</span><span id="Spectra.get_absorption-440"><a href="#Spectra.get_absorption-440"><span class="linenos">440</span></a>                <span class="n">corr_dict</span><span class="p">[</span><span class="n">st</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">curve</span> <span class="o">-</span> <span class="n">blank</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">blank_sel</span><span class="p">])</span>
-</span><span id="Spectra.get_absorption-441"><a href="#Spectra.get_absorption-441"><span class="linenos">441</span></a>
-</span><span id="Spectra.get_absorption-442"><a href="#Spectra.get_absorption-442"><span class="linenos">442</span></a>                <span class="c1"># Save the selected reference curve</span>
-</span><span id="Spectra.get_absorption-443"><a href="#Spectra.get_absorption-443"><span class="linenos">443</span></a>                <span class="n">blank_dict</span><span class="p">[</span><span class="n">st</span><span class="p">]</span> <span class="o">=</span> <span class="n">blank</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">blank_sel</span><span class="p">]</span>
-</span><span id="Spectra.get_absorption-444"><a href="#Spectra.get_absorption-444"><span class="linenos">444</span></a>                <span class="n">blank_sal_dict</span><span class="p">[</span><span class="n">st</span><span class="p">]</span> <span class="o">=</span> <span class="n">blank_sel</span>
-</span><span id="Spectra.get_absorption-445"><a href="#Spectra.get_absorption-445"><span class="linenos">445</span></a>
-</span><span id="Spectra.get_absorption-446"><a href="#Spectra.get_absorption-446"><span class="linenos">446</span></a>            <span class="c1"># Corrected data</span>
-</span><span id="Spectra.get_absorption-447"><a href="#Spectra.get_absorption-447"><span class="linenos">447</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">corr_dict</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
-</span><span id="Spectra.get_absorption-448"><a href="#Spectra.get_absorption-448"><span class="linenos">448</span></a>
-</span><span id="Spectra.get_absorption-449"><a href="#Spectra.get_absorption-449"><span class="linenos">449</span></a>            <span class="c1"># Reference used</span>
-</span><span id="Spectra.get_absorption-450"><a href="#Spectra.get_absorption-450"><span class="linenos">450</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">blank_curves</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">blank_dict</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
-</span><span id="Spectra.get_absorption-451"><a href="#Spectra.get_absorption-451"><span class="linenos">451</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">blank_salinity</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">blank_sal_dict</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-</span><span id="Spectra.get_absorption-452"><a href="#Spectra.get_absorption-452"><span class="linenos">452</span></a>
-</span><span id="Spectra.get_absorption-453"><a href="#Spectra.get_absorption-453"><span class="linenos">453</span></a>        <span class="c1">#-----------------------</span>
-</span><span id="Spectra.get_absorption-454"><a href="#Spectra.get_absorption-454"><span class="linenos">454</span></a>        <span class="c1"># Null point correction</span>
-</span><span id="Spectra.get_absorption-455"><a href="#Spectra.get_absorption-455"><span class="linenos">455</span></a>        <span class="c1">#-----------------------</span>
-</span><span id="Spectra.get_absorption-456"><a href="#Spectra.get_absorption-456"><span class="linenos">456</span></a>
-</span><span id="Spectra.get_absorption-457"><a href="#Spectra.get_absorption-457"><span class="linenos">457</span></a>        <span class="n">_check</span> <span class="o">=</span> <span class="kc">True</span>
-</span><span id="Spectra.get_absorption-458"><a href="#Spectra.get_absorption-458"><span class="linenos">458</span></a>
-</span><span id="Spectra.get_absorption-459"><a href="#Spectra.get_absorption-459"><span class="linenos">459</span></a>        <span class="c1"># Single wavelength</span>
-</span><span id="Spectra.get_absorption-460"><a href="#Spectra.get_absorption-460"><span class="linenos">460</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wl_null_point_correction</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
-</span><span id="Spectra.get_absorption-461"><a href="#Spectra.get_absorption-461"><span class="linenos">461</span></a>
-</span><span id="Spectra.get_absorption-462"><a href="#Spectra.get_absorption-462"><span class="linenos">462</span></a>            <span class="c1"># Null point correction offsets</span>
-</span><span id="Spectra.get_absorption-463"><a href="#Spectra.get_absorption-463"><span class="linenos">463</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">npc_offset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span><span class="p">[</span><span class="n">wl_null_point_correction</span><span class="p">]</span>
-</span><span id="Spectra.get_absorption-464"><a href="#Spectra.get_absorption-464"><span class="linenos">464</span></a>            <span class="n">absorbance_off</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">npc_offset</span> <span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-465"><a href="#Spectra.get_absorption-465"><span class="linenos">465</span></a>
-</span><span id="Spectra.get_absorption-466"><a href="#Spectra.get_absorption-466"><span class="linenos">466</span></a>        <span class="c1"># Mean within an interval</span>
-</span><span id="Spectra.get_absorption-467"><a href="#Spectra.get_absorption-467"><span class="linenos">467</span></a>        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wl_null_point_correction</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)):</span>
-</span><span id="Spectra.get_absorption-468"><a href="#Spectra.get_absorption-468"><span class="linenos">468</span></a>
-</span><span id="Spectra.get_absorption-469"><a href="#Spectra.get_absorption-469"><span class="linenos">469</span></a>            <span class="c1"># Initial and final wavelengths</span>
-</span><span id="Spectra.get_absorption-470"><a href="#Spectra.get_absorption-470"><span class="linenos">470</span></a>            <span class="n">wli</span><span class="p">,</span> <span class="n">wlf</span> <span class="o">=</span> <span class="n">wl_null_point_correction</span>
-</span><span id="Spectra.get_absorption-471"><a href="#Spectra.get_absorption-471"><span class="linenos">471</span></a>
-</span><span id="Spectra.get_absorption-472"><a href="#Spectra.get_absorption-472"><span class="linenos">472</span></a>            <span class="c1"># Offsets</span>
-</span><span id="Spectra.get_absorption-473"><a href="#Spectra.get_absorption-473"><span class="linenos">473</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">npc_offset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">wli</span><span class="p">:</span><span class="n">wlf</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-474"><a href="#Spectra.get_absorption-474"><span class="linenos">474</span></a>            <span class="n">absorbance_off</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">npc_offset</span> <span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-475"><a href="#Spectra.get_absorption-475"><span class="linenos">475</span></a>
-</span><span id="Spectra.get_absorption-476"><a href="#Spectra.get_absorption-476"><span class="linenos">476</span></a>        <span class="c1"># No correction</span>
-</span><span id="Spectra.get_absorption-477"><a href="#Spectra.get_absorption-477"><span class="linenos">477</span></a>        <span class="k">elif</span> <span class="n">wl_null_point_correction</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Spectra.get_absorption-478"><a href="#Spectra.get_absorption-478"><span class="linenos">478</span></a>            <span class="n">absorbance_off</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span>
-</span><span id="Spectra.get_absorption-479"><a href="#Spectra.get_absorption-479"><span class="linenos">479</span></a>            <span class="n">_check</span> <span class="o">=</span> <span class="kc">False</span>
-</span><span id="Spectra.get_absorption-480"><a href="#Spectra.get_absorption-480"><span class="linenos">480</span></a>
-</span><span id="Spectra.get_absorption-481"><a href="#Spectra.get_absorption-481"><span class="linenos">481</span></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="Spectra.get_absorption-482"><a href="#Spectra.get_absorption-482"><span class="linenos">482</span></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Set a proper value to &#39;</span>
-</span><span id="Spectra.get_absorption-483"><a href="#Spectra.get_absorption-483"><span class="linenos">483</span></a>                             <span class="o">+</span><span class="s1">&#39;&quot;wl_null_point_correction&quot;&#39;</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-484"><a href="#Spectra.get_absorption-484"><span class="linenos">484</span></a>
-</span><span id="Spectra.get_absorption-485"><a href="#Spectra.get_absorption-485"><span class="linenos">485</span></a>        <span class="c1"># Check according to IOCCG recommendation</span>
-</span><span id="Spectra.get_absorption-486"><a href="#Spectra.get_absorption-486"><span class="linenos">486</span></a>        <span class="k">if</span> <span class="n">_check</span> <span class="ow">and</span> <span class="nb">any</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">npc_offset</span> <span class="o">&gt;</span> <span class="mf">.0015</span><span class="p">):</span>
-</span><span id="Spectra.get_absorption-487"><a href="#Spectra.get_absorption-487"><span class="linenos">487</span></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;WARNING: there are offsets &gt; 0.0015 AU in the null &#39;</span> <span class="o">+</span>
-</span><span id="Spectra.get_absorption-488"><a href="#Spectra.get_absorption-488"><span class="linenos">488</span></a>                  <span class="s1">&#39;point correction&#39;</span><span class="p">)</span>
-</span><span id="Spectra.get_absorption-489"><a href="#Spectra.get_absorption-489"><span class="linenos">489</span></a>
-</span><span id="Spectra.get_absorption-490"><a href="#Spectra.get_absorption-490"><span class="linenos">490</span></a>        <span class="c1"># Calculate absorption</span>
-</span><span id="Spectra.get_absorption-491"><a href="#Spectra.get_absorption-491"><span class="linenos">491</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">absorption</span> <span class="o">=</span> <span class="mf">2.303</span> <span class="o">*</span> <span class="n">absorbance_off</span> <span class="o">/</span> <span class="n">pathlength</span>
-</span><span id="Spectra.get_absorption-492"><a href="#Spectra.get_absorption-492"><span class="linenos">492</span></a>
-</span><span id="Spectra.get_absorption-493"><a href="#Spectra.get_absorption-493"><span class="linenos">493</span></a>        <span class="k">return</span> <span class="bp">self</span>
+    <a class="headerlink" href="#Spectra.compute_absorption"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Spectra.compute_absorption-316"><a href="#Spectra.compute_absorption-316"><span class="linenos">316</span></a>    <span class="k">def</span><span class="w"> </span><span class="nf">compute_absorption</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+</span><span id="Spectra.compute_absorption-317"><a href="#Spectra.compute_absorption-317"><span class="linenos">317</span></a>                       <span class="n">use_blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="Spectra.compute_absorption-318"><a href="#Spectra.compute_absorption-318"><span class="linenos">318</span></a>                       <span class="n">blank</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+</span><span id="Spectra.compute_absorption-319"><a href="#Spectra.compute_absorption-319"><span class="linenos">319</span></a>                       <span class="n">wl_null_point_correction</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+</span><span id="Spectra.compute_absorption-320"><a href="#Spectra.compute_absorption-320"><span class="linenos">320</span></a>                       <span class="n">pathlength</span><span class="o">=</span><span class="mf">.1</span><span class="p">):</span>
+</span><span id="Spectra.compute_absorption-321"><a href="#Spectra.compute_absorption-321"><span class="linenos">321</span></a><span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
+</span><span id="Spectra.compute_absorption-322"><a href="#Spectra.compute_absorption-322"><span class="linenos">322</span></a><span class="sd">        Retrieves absorption from absorbance curves.</span>
+</span><span id="Spectra.compute_absorption-323"><a href="#Spectra.compute_absorption-323"><span class="linenos">323</span></a>
+</span><span id="Spectra.compute_absorption-324"><a href="#Spectra.compute_absorption-324"><span class="linenos">324</span></a><span class="sd">        Parameters</span>
+</span><span id="Spectra.compute_absorption-325"><a href="#Spectra.compute_absorption-325"><span class="linenos">325</span></a><span class="sd">        ----------</span>
+</span><span id="Spectra.compute_absorption-326"><a href="#Spectra.compute_absorption-326"><span class="linenos">326</span></a>
+</span><span id="Spectra.compute_absorption-327"><a href="#Spectra.compute_absorption-327"><span class="linenos">327</span></a><span class="sd">        use_blank : bool, optional</span>
+</span><span id="Spectra.compute_absorption-328"><a href="#Spectra.compute_absorption-328"><span class="linenos">328</span></a><span class="sd">            Indicates whether the data must be corrected using a blank.</span>
+</span><span id="Spectra.compute_absorption-329"><a href="#Spectra.compute_absorption-329"><span class="linenos">329</span></a><span class="sd">            The default is `True`.</span>
+</span><span id="Spectra.compute_absorption-330"><a href="#Spectra.compute_absorption-330"><span class="linenos">330</span></a>
+</span><span id="Spectra.compute_absorption-331"><a href="#Spectra.compute_absorption-331"><span class="linenos">331</span></a><span class="sd">        blank : pd.DataFrame, optional</span>
+</span><span id="Spectra.compute_absorption-332"><a href="#Spectra.compute_absorption-332"><span class="linenos">332</span></a><span class="sd">            Only used when `use_blank=True`.</span>
+</span><span id="Spectra.compute_absorption-333"><a href="#Spectra.compute_absorption-333"><span class="linenos">333</span></a><span class="sd">            If `None`, the mean blank measurements</span>
+</span><span id="Spectra.compute_absorption-334"><a href="#Spectra.compute_absorption-334"><span class="linenos">334</span></a><span class="sd">            within the data will be used.</span>
+</span><span id="Spectra.compute_absorption-335"><a href="#Spectra.compute_absorption-335"><span class="linenos">335</span></a><span class="sd">            If a single curve is provided (wavelengths in the columns),</span>
+</span><span id="Spectra.compute_absorption-336"><a href="#Spectra.compute_absorption-336"><span class="linenos">336</span></a><span class="sd">            it will be used in all measurements.</span>
+</span><span id="Spectra.compute_absorption-337"><a href="#Spectra.compute_absorption-337"><span class="linenos">337</span></a><span class="sd">            If multiple curves are provided (salinity curves), the algorithm</span>
+</span><span id="Spectra.compute_absorption-338"><a href="#Spectra.compute_absorption-338"><span class="linenos">338</span></a><span class="sd">            will select the blank closer to the sample at 685 nm, </span>
+</span><span id="Spectra.compute_absorption-339"><a href="#Spectra.compute_absorption-339"><span class="linenos">339</span></a><span class="sd">            following the IOCCG protocol.</span>
+</span><span id="Spectra.compute_absorption-340"><a href="#Spectra.compute_absorption-340"><span class="linenos">340</span></a><span class="sd">            The default is `None`.</span>
+</span><span id="Spectra.compute_absorption-341"><a href="#Spectra.compute_absorption-341"><span class="linenos">341</span></a>
+</span><span id="Spectra.compute_absorption-342"><a href="#Spectra.compute_absorption-342"><span class="linenos">342</span></a><span class="sd">        wl_null_point_correction : int or array-like, optional</span>
+</span><span id="Spectra.compute_absorption-343"><a href="#Spectra.compute_absorption-343"><span class="linenos">343</span></a><span class="sd">            Wavelength to be used at the null point correction (offset).</span>
+</span><span id="Spectra.compute_absorption-344"><a href="#Spectra.compute_absorption-344"><span class="linenos">344</span></a><span class="sd">            If an integer is passed, the absorption at this wavelength will</span>
+</span><span id="Spectra.compute_absorption-345"><a href="#Spectra.compute_absorption-345"><span class="linenos">345</span></a><span class="sd">            be used.</span>
+</span><span id="Spectra.compute_absorption-346"><a href="#Spectra.compute_absorption-346"><span class="linenos">346</span></a><span class="sd">            If a tuple with the limits of a spectral interval is</span>
+</span><span id="Spectra.compute_absorption-347"><a href="#Spectra.compute_absorption-347"><span class="linenos">347</span></a><span class="sd">            provided, the mean absorption within the range will be used.</span>
+</span><span id="Spectra.compute_absorption-348"><a href="#Spectra.compute_absorption-348"><span class="linenos">348</span></a><span class="sd">            If `None`, the null point correction won&#39;t be executed.</span>
+</span><span id="Spectra.compute_absorption-349"><a href="#Spectra.compute_absorption-349"><span class="linenos">349</span></a><span class="sd">            The default is `None`.</span>
+</span><span id="Spectra.compute_absorption-350"><a href="#Spectra.compute_absorption-350"><span class="linenos">350</span></a>
+</span><span id="Spectra.compute_absorption-351"><a href="#Spectra.compute_absorption-351"><span class="linenos">351</span></a><span class="sd">        pathlength : float, optional</span>
+</span><span id="Spectra.compute_absorption-352"><a href="#Spectra.compute_absorption-352"><span class="linenos">352</span></a><span class="sd">            The instrument optical path length in meters. The default is `.1`.</span>
+</span><span id="Spectra.compute_absorption-353"><a href="#Spectra.compute_absorption-353"><span class="linenos">353</span></a>
+</span><span id="Spectra.compute_absorption-354"><a href="#Spectra.compute_absorption-354"><span class="linenos">354</span></a><span class="sd">        Returns</span>
+</span><span id="Spectra.compute_absorption-355"><a href="#Spectra.compute_absorption-355"><span class="linenos">355</span></a><span class="sd">        -------</span>
+</span><span id="Spectra.compute_absorption-356"><a href="#Spectra.compute_absorption-356"><span class="linenos">356</span></a><span class="sd">        watercolorlab.Spectra</span>
+</span><span id="Spectra.compute_absorption-357"><a href="#Spectra.compute_absorption-357"><span class="linenos">357</span></a><span class="sd">            The same object is returned.</span>
+</span><span id="Spectra.compute_absorption-358"><a href="#Spectra.compute_absorption-358"><span class="linenos">358</span></a><span class="sd">            A new attribute `absorption` is added inplace.</span>
+</span><span id="Spectra.compute_absorption-359"><a href="#Spectra.compute_absorption-359"><span class="linenos">359</span></a><span class="sd">        &#39;&#39;&#39;</span>
+</span><span id="Spectra.compute_absorption-360"><a href="#Spectra.compute_absorption-360"><span class="linenos">360</span></a>
+</span><span id="Spectra.compute_absorption-361"><a href="#Spectra.compute_absorption-361"><span class="linenos">361</span></a>        <span class="c1">#------------------------</span>
+</span><span id="Spectra.compute_absorption-362"><a href="#Spectra.compute_absorption-362"><span class="linenos">362</span></a>        <span class="c1"># Prepare data and blank</span>
+</span><span id="Spectra.compute_absorption-363"><a href="#Spectra.compute_absorption-363"><span class="linenos">363</span></a>        <span class="c1">#------------------------</span>
+</span><span id="Spectra.compute_absorption-364"><a href="#Spectra.compute_absorption-364"><span class="linenos">364</span></a>
+</span><span id="Spectra.compute_absorption-365"><a href="#Spectra.compute_absorption-365"><span class="linenos">365</span></a>        <span class="c1"># If the blank curves from the dataset are to be used</span>
+</span><span id="Spectra.compute_absorption-366"><a href="#Spectra.compute_absorption-366"><span class="linenos">366</span></a>        <span class="k">if</span> <span class="n">use_blank</span> <span class="ow">and</span> <span class="n">blank</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Spectra.compute_absorption-367"><a href="#Spectra.compute_absorption-367"><span class="linenos">367</span></a>
+</span><span id="Spectra.compute_absorption-368"><a href="#Spectra.compute_absorption-368"><span class="linenos">368</span></a>            <span class="c1"># Get mean reference curves</span>
+</span><span id="Spectra.compute_absorption-369"><a href="#Spectra.compute_absorption-369"><span class="linenos">369</span></a>            <span class="n">blank</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span>
+</span><span id="Spectra.compute_absorption-370"><a href="#Spectra.compute_absorption-370"><span class="linenos">370</span></a>                     <span class="o">.</span><span class="n">absorbance</span>
+</span><span id="Spectra.compute_absorption-371"><a href="#Spectra.compute_absorption-371"><span class="linenos">371</span></a>                     <span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">is_blank</span><span class="p">]</span>
+</span><span id="Spectra.compute_absorption-372"><a href="#Spectra.compute_absorption-372"><span class="linenos">372</span></a>                     <span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span><span id="Spectra.compute_absorption-373"><a href="#Spectra.compute_absorption-373"><span class="linenos">373</span></a>                     <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;blank&#39;</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-374"><a href="#Spectra.compute_absorption-374"><span class="linenos">374</span></a>                     <span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
+</span><span id="Spectra.compute_absorption-375"><a href="#Spectra.compute_absorption-375"><span class="linenos">375</span></a>                     <span class="o">.</span><span class="n">transpose</span><span class="p">())</span>
+</span><span id="Spectra.compute_absorption-376"><a href="#Spectra.compute_absorption-376"><span class="linenos">376</span></a>
+</span><span id="Spectra.compute_absorption-377"><a href="#Spectra.compute_absorption-377"><span class="linenos">377</span></a>        <span class="c1"># If a blank curve (or curves) is provided</span>
+</span><span id="Spectra.compute_absorption-378"><a href="#Spectra.compute_absorption-378"><span class="linenos">378</span></a>        <span class="k">elif</span> <span class="n">use_blank</span> <span class="ow">and</span> <span class="n">blank</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Spectra.compute_absorption-379"><a href="#Spectra.compute_absorption-379"><span class="linenos">379</span></a>
+</span><span id="Spectra.compute_absorption-380"><a href="#Spectra.compute_absorption-380"><span class="linenos">380</span></a>            <span class="c1"># Prepare the curve(s)</span>
+</span><span id="Spectra.compute_absorption-381"><a href="#Spectra.compute_absorption-381"><span class="linenos">381</span></a>            <span class="n">blank</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">blank</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-382"><a href="#Spectra.compute_absorption-382"><span class="linenos">382</span></a>
+</span><span id="Spectra.compute_absorption-383"><a href="#Spectra.compute_absorption-383"><span class="linenos">383</span></a>        <span class="c1"># In case no blank is to be used (i.e., curves already corrected)</span>
+</span><span id="Spectra.compute_absorption-384"><a href="#Spectra.compute_absorption-384"><span class="linenos">384</span></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="Spectra.compute_absorption-385"><a href="#Spectra.compute_absorption-385"><span class="linenos">385</span></a>            <span class="n">blank</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="n">wl</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">wl</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">wls</span><span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;blank&#39;</span><span class="p">])</span>
+</span><span id="Spectra.compute_absorption-386"><a href="#Spectra.compute_absorption-386"><span class="linenos">386</span></a>
+</span><span id="Spectra.compute_absorption-387"><a href="#Spectra.compute_absorption-387"><span class="linenos">387</span></a>        <span class="c1"># Min and max wavelengths available</span>
+</span><span id="Spectra.compute_absorption-388"><a href="#Spectra.compute_absorption-388"><span class="linenos">388</span></a>        <span class="n">wlmin</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wls</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">blank</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+</span><span id="Spectra.compute_absorption-389"><a href="#Spectra.compute_absorption-389"><span class="linenos">389</span></a>        <span class="n">wlmax</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wls</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">blank</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+</span><span id="Spectra.compute_absorption-390"><a href="#Spectra.compute_absorption-390"><span class="linenos">390</span></a>        <span class="n">wl_range</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">wlmin</span><span class="p">,</span> <span class="n">wlmax</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-391"><a href="#Spectra.compute_absorption-391"><span class="linenos">391</span></a>
+</span><span id="Spectra.compute_absorption-392"><a href="#Spectra.compute_absorption-392"><span class="linenos">392</span></a>        <span class="c1"># Get mean sample curves</span>
+</span><span id="Spectra.compute_absorption-393"><a href="#Spectra.compute_absorption-393"><span class="linenos">393</span></a>        <span class="c1"># They&#39;re grouped by id in case of multiple measurements</span>
+</span><span id="Spectra.compute_absorption-394"><a href="#Spectra.compute_absorption-394"><span class="linenos">394</span></a>        <span class="n">mean</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span>
+</span><span id="Spectra.compute_absorption-395"><a href="#Spectra.compute_absorption-395"><span class="linenos">395</span></a>                <span class="o">.</span><span class="n">rdata</span>
+</span><span id="Spectra.compute_absorption-396"><a href="#Spectra.compute_absorption-396"><span class="linenos">396</span></a>                <span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">is_sample</span><span class="p">]</span>
+</span><span id="Spectra.compute_absorption-397"><a href="#Spectra.compute_absorption-397"><span class="linenos">397</span></a>                <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-398"><a href="#Spectra.compute_absorption-398"><span class="linenos">398</span></a>                <span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-399"><a href="#Spectra.compute_absorption-399"><span class="linenos">399</span></a>                <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">regex</span><span class="o">=</span><span class="s1">&#39;\d&#39;</span><span class="p">))</span>
+</span><span id="Spectra.compute_absorption-400"><a href="#Spectra.compute_absorption-400"><span class="linenos">400</span></a>        <span class="n">mean</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">mean</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-401"><a href="#Spectra.compute_absorption-401"><span class="linenos">401</span></a>
+</span><span id="Spectra.compute_absorption-402"><a href="#Spectra.compute_absorption-402"><span class="linenos">402</span></a>        <span class="c1"># Filter wavelengths</span>
+</span><span id="Spectra.compute_absorption-403"><a href="#Spectra.compute_absorption-403"><span class="linenos">403</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">raw_absorbance</span> <span class="o">=</span> <span class="n">mean</span><span class="p">[</span><span class="n">wl_range</span><span class="p">]</span>
+</span><span id="Spectra.compute_absorption-404"><a href="#Spectra.compute_absorption-404"><span class="linenos">404</span></a>        <span class="n">blank</span> <span class="o">=</span> <span class="n">blank</span><span class="p">[</span><span class="n">wl_range</span><span class="p">]</span>
+</span><span id="Spectra.compute_absorption-405"><a href="#Spectra.compute_absorption-405"><span class="linenos">405</span></a>
+</span><span id="Spectra.compute_absorption-406"><a href="#Spectra.compute_absorption-406"><span class="linenos">406</span></a>        <span class="c1">#-----------------------</span>
+</span><span id="Spectra.compute_absorption-407"><a href="#Spectra.compute_absorption-407"><span class="linenos">407</span></a>        <span class="c1"># Correction with blank</span>
+</span><span id="Spectra.compute_absorption-408"><a href="#Spectra.compute_absorption-408"><span class="linenos">408</span></a>        <span class="c1">#-----------------------</span>
+</span><span id="Spectra.compute_absorption-409"><a href="#Spectra.compute_absorption-409"><span class="linenos">409</span></a>
+</span><span id="Spectra.compute_absorption-410"><a href="#Spectra.compute_absorption-410"><span class="linenos">410</span></a>        <span class="c1"># For single blank curves</span>
+</span><span id="Spectra.compute_absorption-411"><a href="#Spectra.compute_absorption-411"><span class="linenos">411</span></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">blank</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="Spectra.compute_absorption-412"><a href="#Spectra.compute_absorption-412"><span class="linenos">412</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">raw_absorbance</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">blank</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-413"><a href="#Spectra.compute_absorption-413"><span class="linenos">413</span></a>
+</span><span id="Spectra.compute_absorption-414"><a href="#Spectra.compute_absorption-414"><span class="linenos">414</span></a>        <span class="c1"># For multiple blank curves</span>
+</span><span id="Spectra.compute_absorption-415"><a href="#Spectra.compute_absorption-415"><span class="linenos">415</span></a>        <span class="c1"># It was designed to account for salinity curves, and the selection</span>
+</span><span id="Spectra.compute_absorption-416"><a href="#Spectra.compute_absorption-416"><span class="linenos">416</span></a>        <span class="c1"># is performed by minimizing the difference at 685 nm</span>
+</span><span id="Spectra.compute_absorption-417"><a href="#Spectra.compute_absorption-417"><span class="linenos">417</span></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="Spectra.compute_absorption-418"><a href="#Spectra.compute_absorption-418"><span class="linenos">418</span></a>
+</span><span id="Spectra.compute_absorption-419"><a href="#Spectra.compute_absorption-419"><span class="linenos">419</span></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The correction will use the salinity curves provided&#39;</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-420"><a href="#Spectra.compute_absorption-420"><span class="linenos">420</span></a>
+</span><span id="Spectra.compute_absorption-421"><a href="#Spectra.compute_absorption-421"><span class="linenos">421</span></a>            <span class="c1"># Dictionary to receive corrected curves</span>
+</span><span id="Spectra.compute_absorption-422"><a href="#Spectra.compute_absorption-422"><span class="linenos">422</span></a>            <span class="n">corr_dict</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="Spectra.compute_absorption-423"><a href="#Spectra.compute_absorption-423"><span class="linenos">423</span></a>
+</span><span id="Spectra.compute_absorption-424"><a href="#Spectra.compute_absorption-424"><span class="linenos">424</span></a>            <span class="c1"># Dictionaries to save reference curves and their names</span>
+</span><span id="Spectra.compute_absorption-425"><a href="#Spectra.compute_absorption-425"><span class="linenos">425</span></a>            <span class="n">blank_dict</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="Spectra.compute_absorption-426"><a href="#Spectra.compute_absorption-426"><span class="linenos">426</span></a>            <span class="n">blank_sal_dict</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="Spectra.compute_absorption-427"><a href="#Spectra.compute_absorption-427"><span class="linenos">427</span></a>
+</span><span id="Spectra.compute_absorption-428"><a href="#Spectra.compute_absorption-428"><span class="linenos">428</span></a>            <span class="c1"># Iterate over curves</span>
+</span><span id="Spectra.compute_absorption-429"><a href="#Spectra.compute_absorption-429"><span class="linenos">429</span></a>            <span class="k">for</span> <span class="n">st</span><span class="p">,</span> <span class="n">curve</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">raw_absorbance</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+</span><span id="Spectra.compute_absorption-430"><a href="#Spectra.compute_absorption-430"><span class="linenos">430</span></a>
+</span><span id="Spectra.compute_absorption-431"><a href="#Spectra.compute_absorption-431"><span class="linenos">431</span></a>                <span class="c1"># Select a reference curve</span>
+</span><span id="Spectra.compute_absorption-432"><a href="#Spectra.compute_absorption-432"><span class="linenos">432</span></a>                <span class="n">blank_sel</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="Spectra.compute_absorption-433"><a href="#Spectra.compute_absorption-433"><span class="linenos">433</span></a>                    <span class="nb">abs</span><span class="p">(</span><span class="n">blank</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="mi">685</span><span class="p">:]</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">curve</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">685</span><span class="p">:],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+</span><span id="Spectra.compute_absorption-434"><a href="#Spectra.compute_absorption-434"><span class="linenos">434</span></a>                    <span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-435"><a href="#Spectra.compute_absorption-435"><span class="linenos">435</span></a>                    <span class="o">.</span><span class="n">sort_values</span><span class="p">()</span>
+</span><span id="Spectra.compute_absorption-436"><a href="#Spectra.compute_absorption-436"><span class="linenos">436</span></a>                    <span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="Spectra.compute_absorption-437"><a href="#Spectra.compute_absorption-437"><span class="linenos">437</span></a>                    <span class="p">)</span>
+</span><span id="Spectra.compute_absorption-438"><a href="#Spectra.compute_absorption-438"><span class="linenos">438</span></a>
+</span><span id="Spectra.compute_absorption-439"><a href="#Spectra.compute_absorption-439"><span class="linenos">439</span></a>                <span class="c1"># Subtract selected reference</span>
+</span><span id="Spectra.compute_absorption-440"><a href="#Spectra.compute_absorption-440"><span class="linenos">440</span></a>                <span class="n">corr_dict</span><span class="p">[</span><span class="n">st</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">curve</span> <span class="o">-</span> <span class="n">blank</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">blank_sel</span><span class="p">])</span>
+</span><span id="Spectra.compute_absorption-441"><a href="#Spectra.compute_absorption-441"><span class="linenos">441</span></a>
+</span><span id="Spectra.compute_absorption-442"><a href="#Spectra.compute_absorption-442"><span class="linenos">442</span></a>                <span class="c1"># Save the selected reference curve</span>
+</span><span id="Spectra.compute_absorption-443"><a href="#Spectra.compute_absorption-443"><span class="linenos">443</span></a>                <span class="n">blank_dict</span><span class="p">[</span><span class="n">st</span><span class="p">]</span> <span class="o">=</span> <span class="n">blank</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">blank_sel</span><span class="p">]</span>
+</span><span id="Spectra.compute_absorption-444"><a href="#Spectra.compute_absorption-444"><span class="linenos">444</span></a>                <span class="n">blank_sal_dict</span><span class="p">[</span><span class="n">st</span><span class="p">]</span> <span class="o">=</span> <span class="n">blank_sel</span>
+</span><span id="Spectra.compute_absorption-445"><a href="#Spectra.compute_absorption-445"><span class="linenos">445</span></a>
+</span><span id="Spectra.compute_absorption-446"><a href="#Spectra.compute_absorption-446"><span class="linenos">446</span></a>            <span class="c1"># Corrected data</span>
+</span><span id="Spectra.compute_absorption-447"><a href="#Spectra.compute_absorption-447"><span class="linenos">447</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">corr_dict</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</span><span id="Spectra.compute_absorption-448"><a href="#Spectra.compute_absorption-448"><span class="linenos">448</span></a>
+</span><span id="Spectra.compute_absorption-449"><a href="#Spectra.compute_absorption-449"><span class="linenos">449</span></a>            <span class="c1"># Reference used</span>
+</span><span id="Spectra.compute_absorption-450"><a href="#Spectra.compute_absorption-450"><span class="linenos">450</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">blank_curves</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">blank_dict</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</span><span id="Spectra.compute_absorption-451"><a href="#Spectra.compute_absorption-451"><span class="linenos">451</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">blank_salinity</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">blank_sal_dict</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="Spectra.compute_absorption-452"><a href="#Spectra.compute_absorption-452"><span class="linenos">452</span></a>
+</span><span id="Spectra.compute_absorption-453"><a href="#Spectra.compute_absorption-453"><span class="linenos">453</span></a>        <span class="c1">#-----------------------</span>
+</span><span id="Spectra.compute_absorption-454"><a href="#Spectra.compute_absorption-454"><span class="linenos">454</span></a>        <span class="c1"># Null point correction</span>
+</span><span id="Spectra.compute_absorption-455"><a href="#Spectra.compute_absorption-455"><span class="linenos">455</span></a>        <span class="c1">#-----------------------</span>
+</span><span id="Spectra.compute_absorption-456"><a href="#Spectra.compute_absorption-456"><span class="linenos">456</span></a>
+</span><span id="Spectra.compute_absorption-457"><a href="#Spectra.compute_absorption-457"><span class="linenos">457</span></a>        <span class="n">_check</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="Spectra.compute_absorption-458"><a href="#Spectra.compute_absorption-458"><span class="linenos">458</span></a>
+</span><span id="Spectra.compute_absorption-459"><a href="#Spectra.compute_absorption-459"><span class="linenos">459</span></a>        <span class="c1"># Single wavelength</span>
+</span><span id="Spectra.compute_absorption-460"><a href="#Spectra.compute_absorption-460"><span class="linenos">460</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wl_null_point_correction</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+</span><span id="Spectra.compute_absorption-461"><a href="#Spectra.compute_absorption-461"><span class="linenos">461</span></a>
+</span><span id="Spectra.compute_absorption-462"><a href="#Spectra.compute_absorption-462"><span class="linenos">462</span></a>            <span class="c1"># Null point correction offsets</span>
+</span><span id="Spectra.compute_absorption-463"><a href="#Spectra.compute_absorption-463"><span class="linenos">463</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">npc_offset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span><span class="p">[</span><span class="n">wl_null_point_correction</span><span class="p">]</span>
+</span><span id="Spectra.compute_absorption-464"><a href="#Spectra.compute_absorption-464"><span class="linenos">464</span></a>            <span class="n">absorbance_off</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">npc_offset</span> <span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-465"><a href="#Spectra.compute_absorption-465"><span class="linenos">465</span></a>
+</span><span id="Spectra.compute_absorption-466"><a href="#Spectra.compute_absorption-466"><span class="linenos">466</span></a>        <span class="c1"># Mean within an interval</span>
+</span><span id="Spectra.compute_absorption-467"><a href="#Spectra.compute_absorption-467"><span class="linenos">467</span></a>        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wl_null_point_correction</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)):</span>
+</span><span id="Spectra.compute_absorption-468"><a href="#Spectra.compute_absorption-468"><span class="linenos">468</span></a>
+</span><span id="Spectra.compute_absorption-469"><a href="#Spectra.compute_absorption-469"><span class="linenos">469</span></a>            <span class="c1"># Initial and final wavelengths</span>
+</span><span id="Spectra.compute_absorption-470"><a href="#Spectra.compute_absorption-470"><span class="linenos">470</span></a>            <span class="n">wli</span><span class="p">,</span> <span class="n">wlf</span> <span class="o">=</span> <span class="n">wl_null_point_correction</span>
+</span><span id="Spectra.compute_absorption-471"><a href="#Spectra.compute_absorption-471"><span class="linenos">471</span></a>
+</span><span id="Spectra.compute_absorption-472"><a href="#Spectra.compute_absorption-472"><span class="linenos">472</span></a>            <span class="c1"># Offsets</span>
+</span><span id="Spectra.compute_absorption-473"><a href="#Spectra.compute_absorption-473"><span class="linenos">473</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">npc_offset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">wli</span><span class="p">:</span><span class="n">wlf</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-474"><a href="#Spectra.compute_absorption-474"><span class="linenos">474</span></a>            <span class="n">absorbance_off</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">npc_offset</span> <span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-475"><a href="#Spectra.compute_absorption-475"><span class="linenos">475</span></a>
+</span><span id="Spectra.compute_absorption-476"><a href="#Spectra.compute_absorption-476"><span class="linenos">476</span></a>        <span class="c1"># No correction</span>
+</span><span id="Spectra.compute_absorption-477"><a href="#Spectra.compute_absorption-477"><span class="linenos">477</span></a>        <span class="k">elif</span> <span class="n">wl_null_point_correction</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Spectra.compute_absorption-478"><a href="#Spectra.compute_absorption-478"><span class="linenos">478</span></a>            <span class="n">absorbance_off</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">absorbance</span>
+</span><span id="Spectra.compute_absorption-479"><a href="#Spectra.compute_absorption-479"><span class="linenos">479</span></a>            <span class="n">_check</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="Spectra.compute_absorption-480"><a href="#Spectra.compute_absorption-480"><span class="linenos">480</span></a>
+</span><span id="Spectra.compute_absorption-481"><a href="#Spectra.compute_absorption-481"><span class="linenos">481</span></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="Spectra.compute_absorption-482"><a href="#Spectra.compute_absorption-482"><span class="linenos">482</span></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Set a proper value to &#39;</span>
+</span><span id="Spectra.compute_absorption-483"><a href="#Spectra.compute_absorption-483"><span class="linenos">483</span></a>                             <span class="o">+</span><span class="s1">&#39;&quot;wl_null_point_correction&quot;&#39;</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-484"><a href="#Spectra.compute_absorption-484"><span class="linenos">484</span></a>
+</span><span id="Spectra.compute_absorption-485"><a href="#Spectra.compute_absorption-485"><span class="linenos">485</span></a>        <span class="c1"># Check according to IOCCG recommendation</span>
+</span><span id="Spectra.compute_absorption-486"><a href="#Spectra.compute_absorption-486"><span class="linenos">486</span></a>        <span class="k">if</span> <span class="n">_check</span> <span class="ow">and</span> <span class="nb">any</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">npc_offset</span> <span class="o">&gt;</span> <span class="mf">.0015</span><span class="p">):</span>
+</span><span id="Spectra.compute_absorption-487"><a href="#Spectra.compute_absorption-487"><span class="linenos">487</span></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;WARNING: there are offsets &gt; 0.0015 AU in the null &#39;</span> <span class="o">+</span>
+</span><span id="Spectra.compute_absorption-488"><a href="#Spectra.compute_absorption-488"><span class="linenos">488</span></a>                  <span class="s1">&#39;point correction&#39;</span><span class="p">)</span>
+</span><span id="Spectra.compute_absorption-489"><a href="#Spectra.compute_absorption-489"><span class="linenos">489</span></a>
+</span><span id="Spectra.compute_absorption-490"><a href="#Spectra.compute_absorption-490"><span class="linenos">490</span></a>        <span class="c1"># Calculate absorption</span>
+</span><span id="Spectra.compute_absorption-491"><a href="#Spectra.compute_absorption-491"><span class="linenos">491</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">absorption</span> <span class="o">=</span> <span class="mf">2.303</span> <span class="o">*</span> <span class="n">absorbance_off</span> <span class="o">/</span> <span class="n">pathlength</span>
+</span><span id="Spectra.compute_absorption-492"><a href="#Spectra.compute_absorption-492"><span class="linenos">492</span></a>
+</span><span id="Spectra.compute_absorption-493"><a href="#Spectra.compute_absorption-493"><span class="linenos">493</span></a>        <span class="k">return</span> <span class="bp">self</span>
 </span></pre></div>
 
 
@@ -2298,7 +2298,7 @@ dropped until only a single curve is left.</p>
 
 <h2 id="returns">Returns</h2>
 
-<p>prolab.Spectra
+<p>watercolorlab.Spectra
     The same object is returned.
     A new attribute <code>absorption</code> is added inplace.</p>
 </div>
@@ -2332,7 +2332,7 @@ dropped until only a single curve is left.</p>
 </span><span id="Spectra.expfit-512"><a href="#Spectra.expfit-512"><span class="linenos">512</span></a>
 </span><span id="Spectra.expfit-513"><a href="#Spectra.expfit-513"><span class="linenos">513</span></a><span class="sd">        Returns</span>
 </span><span id="Spectra.expfit-514"><a href="#Spectra.expfit-514"><span class="linenos">514</span></a><span class="sd">        -------</span>
-</span><span id="Spectra.expfit-515"><a href="#Spectra.expfit-515"><span class="linenos">515</span></a><span class="sd">        prolab.Spectra</span>
+</span><span id="Spectra.expfit-515"><a href="#Spectra.expfit-515"><span class="linenos">515</span></a><span class="sd">        watercolorlab.Spectra</span>
 </span><span id="Spectra.expfit-516"><a href="#Spectra.expfit-516"><span class="linenos">516</span></a><span class="sd">            The same object is returned.</span>
 </span><span id="Spectra.expfit-517"><a href="#Spectra.expfit-517"><span class="linenos">517</span></a><span class="sd">            A new attribute `fitted` is added inplace.</span>
 </span><span id="Spectra.expfit-518"><a href="#Spectra.expfit-518"><span class="linenos">518</span></a><span class="sd">        &#39;&#39;&#39;</span>
@@ -2387,7 +2387,7 @@ dropped until only a single curve is left.</p>
 
 <h2 id="returns">Returns</h2>
 
-<p>prolab.Spectra
+<p>watercolorlab.Spectra
     The same object is returned.
     A new attribute <code>fitted</code> is added inplace.</p>
 </div>
